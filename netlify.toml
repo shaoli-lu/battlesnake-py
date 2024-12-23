@@ -1,6 +1,6 @@
 [build]
-  command = "docker build -t s33333/battlesnake-py ."
-  publish = "battlesnake"
+  docker = ["docker build -t s33333/battlesnake-py ."]
+  publish = "battlesnake-py"
 
 [context.deploy-preview]
   command = "docker build -t s33333/battlesnake-py:latest ."
